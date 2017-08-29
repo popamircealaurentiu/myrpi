@@ -25,9 +25,9 @@ run: raspi-config
 sudo apt-get update
 sudo apt-get upgrade
 # 3.2 install python and spidev
-sudo apt-get install python-dev python3-dev
-cd ~
-git clone https://github.com/doceme/py-spidev.git
-cd py-spidev
-make
+sudo apt-get install python-dev python3-dev &&
+cd ~ &&
+git clone https://github.com/doceme/py-spidev.git &&
+cd py-spidev &&
+make &&
 sudo make install
