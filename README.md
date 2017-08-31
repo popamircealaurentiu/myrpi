@@ -10,6 +10,7 @@ sudo passwd root
 sudo passwd pi
 # 2.2 enable ssh
 run: nano /etc/ssh/sshd_config
+
 run: service ssh restart
 
 # 2.3 raspi-config 
